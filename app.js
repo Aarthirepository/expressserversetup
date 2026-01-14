@@ -9,7 +9,9 @@ app.use((req,res,next)=>{
 })
 app.use((req,res,next)=>{
     console.log("Output from middleware 2")
-    res.send("Response from middleware 2")
+    res.send(
+      "Server is up and running on port 3000! Ready to handle requests."
+    );
 })
 
 
